@@ -1,2 +1,4 @@
-This is a repo for a Calibri plugin
-Hallo
+This is a repository for our Calibre plugin.
+
+In order for you to add this plugin to Calibre you must clone this repository and run the command  'calibre-customize -b .' in the plugin directory
+

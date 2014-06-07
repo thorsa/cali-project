@@ -23,5 +23,5 @@ class HelloWorld(FileTypePlugin):
         mi = get_metadata(file, ext)
         mi.publisher = 'Hello World'
         set_metadata(file, mi, ext)
-        print(path_to_ebook)
+        print(str(mi))
         return path_to_ebook
