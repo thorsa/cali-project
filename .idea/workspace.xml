@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a71561b-a6bf-4a9c-96f2-2fcf20b7e9bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thorsa/__init__.py" afterPath="$PROJECT_DIR$/thorsa/__init__.py" />
-    </list>
+    <list default="true" id="9a71561b-a6bf-4a9c-96f2-2fcf20b7e9bb" name="Default" comment="" />
     <ignored path="cali-project.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thorsa/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84415585" vertical-offset="60" max-vertical-offset="576">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.6883117" vertical-offset="60" max-vertical-offset="576">
+              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -286,11 +284,15 @@
       <created>1402156830030</created>
       <updated>1402156830030</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Change tag to fiction">
+      <created>1402160225293</created>
+      <updated>1402160225293</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1366" height="736" extended-state="0" />
+    <frame x="0" y="30" width="1366" height="736" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -331,7 +333,8 @@
     <MESSAGE value="Prufu plug" />
     <MESSAGE value="Small changes to the plugin" />
     <MESSAGE value="Plugin sem virkar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plugin sem virkar" />
+    <MESSAGE value="Change tag to fiction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change tag to fiction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -387,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thorsa/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84415585" vertical-offset="60" max-vertical-offset="576">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6883117" vertical-offset="60" max-vertical-offset="576">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
