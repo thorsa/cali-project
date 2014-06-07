@@ -21,7 +21,7 @@ class HelloWorld(FileTypePlugin):
         file = open(path_to_ebook, 'r+b')
         ext  = os.path.splitext(path_to_ebook)[-1][1:].lower()
         mi = get_metadata(file, ext)
-        mi.publisher = 'Hello World'
+        mi.tags = ['fiction']
         set_metadata(file, mi, ext)
-        print(str(mi))
+        print(str(mi.tags))
         return path_to_ebook
