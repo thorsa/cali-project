@@ -3,10 +3,10 @@ __author__ = 'sigurros'
 import os
 from calibre.customize import FileTypePlugin
 
-class HelloWorld(FileTypePlugin):
+class TagFilter(FileTypePlugin):
 
-    name                = 'Metadata messer Plugin' # Name of the plugin
-    description         = 'Mess with metadata on import'
+    name                = 'Tag Filter Plugin' # Name of the plugin
+    description         = 'Remove any tags that do not fit our genres on import'
     supported_platforms = ['windows', 'osx', 'linux'] # Platforms this plugin will run on
     author              = 'Thorsa' # The author of this plugin
     version             = (1, 1, 0)   # The version number of this plugin
