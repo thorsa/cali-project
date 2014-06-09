@@ -1,4 +1,4 @@
-__author__ = 'sigurros'
+__author__ = 'Thorsa'
 
 import os
 from calibre.customize import FileTypePlugin
