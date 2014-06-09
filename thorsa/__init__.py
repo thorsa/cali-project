@@ -28,7 +28,7 @@ class TagFilter(FileTypePlugin):
                 if tag2.find(tag) > -1:
                     newgenres.add(tag)
 
-        return newgenres
+        return sorted(newgenres)
 
     def run(self, path_to_ebook):
 
