@@ -14,14 +14,27 @@ class TagFilter(FileTypePlugin):
     on_import      = True # Run this plugin after importing into the library
     minimum_calibre_version = (0, 7, 53)
 
+    def new_genre_list(self, genresonbook):
+        genres = [u'drama', u'romance', u'satire', u'tragedy', u'comedy', u'tragicomedy',
+                  u'horror', u'fiction', u'supernatural']
+        newgenres = set(genres).intersection(genresonbook)
+        for tag in genres:
+            for tag2 in genresonbook:
+                if tag2.find(tag) > -1:
+                    newgenres.add(tag)
 
+        return newgenres
 
     def run(self, path_to_ebook):
+
         from calibre.ebooks.metadata.meta import get_metadata, set_metadata
         file = open(path_to_ebook, 'r+b')
         ext  = os.path.splitext(path_to_ebook)[-1][1:].lower()
         mi = get_metadata(file, ext)
-        mi.tags = ['fiction']
-        set_metadata(file, mi, ext)
-        print(str(mi.tags))
+        genresonbook = [element.lower() for element in mi.tags]
+        newgenres = self.new_genre_list(genresonbook)
+
+        #set_metadata(file, mi, ext)
+        print(genresonbook)
+        print(newgenres)
         return path_to_ebook
