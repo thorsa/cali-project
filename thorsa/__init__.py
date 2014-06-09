@@ -15,50 +15,13 @@ class TagFilter(FileTypePlugin):
     minimum_calibre_version = (0, 7, 53)
 
     def new_genre_list(self, genresonbook):
-        genres = [u'drama', u'romance', u'satire', u'tragedy', u'comedy', u'tragicomedy',
-                  u'horror', u'fiction', u'supernatural', u'adventure']
-        adventure
-children's
-young-adult
-satire
-comedy
-erotic
-historical
-literary
-memoir
-thriller
-horror
-science
-saga
-steampunk
-dystopian
-post-apocalyptic
-alien
-gothic
-supernatural
-paranormal
-ghost
-vampire
-fiction
-werewolf
-occult
-fantasy
-contemporary
-epic
-medieval
-romance
-suspense
-crime
-detective
-mystery
-westerns
-tragedy
-urban
-tragicomedy
-fable
-folklore
-history
-philosophy
+
+        genres = [u'drama',u'adventure',u"children's",u'young-adult',u'satire',u'comedy',u'erotic', u'historical',
+                  u'literary',u'memoir',u'thriller',u'horror',u'science',u'saga',u'steampunk',u'dystopian',
+                  u'post-apocalyptic',u'alien',u'gothic',u'supernatural',u'paranormal',u'ghost ',u'vampire',
+                  u'fiction',u'werewolf',u'occult',u'fantasy',u'contemporary',u'epic',u'medieval',u'romance',
+                  u'suspense',u'crime',u'detective',u'mystery',u'westerns',u'tragedy',u'urban',u'tragicomedy',
+                  u'fable',u'folklore',u'history',u'philosophy']
         newgenres = set(genres).intersection(genresonbook)
         for tag in genres:
             for tag2 in genresonbook:
@@ -74,9 +37,9 @@ philosophy
         ext  = os.path.splitext(path_to_ebook)[-1][1:].lower()
         mi = get_metadata(file, ext)
         genresonbook = [element.lower() for element in mi.tags]
-        newgenres = self.new_genre_list(genresonbook)
+        mi.tags = self.new_genre_list(genresonbook)
 
-        #set_metadata(file, mi, ext)
+        set_metadata(file, mi, ext)
+        print(mi.tags)
         print(genresonbook)
-        print(newgenres)
         return path_to_ebook
