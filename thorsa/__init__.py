@@ -40,6 +40,8 @@ class TagFilter(FileTypePlugin):
         mi.tags = self.new_genre_list(genresonbook)
 
         set_metadata(file, mi, ext)
-        print(mi.tags)
+
+        print(mi)
         print(genresonbook)
+
         return path_to_ebook
